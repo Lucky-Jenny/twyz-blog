@@ -421,7 +421,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-15
+                    2021-05-16
                 </div>
                 
 
@@ -481,28 +481,28 @@
 <p><img src="/pics/ptr-figure.png" alt="poniter"></p>
 <p>图中紫色地址保存的是指针p，红色地址保存的是变量var。而指针p本身的值就是var的地址，故表示：指针p指向变量var。</p>
 <p>指针的赋值方式有两种操作(本质相同)：</p>
-<pre class="line-numbers language-C" data-language="C"><code class="language-C">int *p = a;   // `指针p`指向`变量a` (实质指向地址)
-int p = &amp;a;   // 把`变量a`的地址给`指针变量p`<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> a<span class="token punctuation">;</span>   <span class="token comment">// `指针p`指向`变量a` (实质指向地址)</span>
+<span class="token keyword">int</span> p <span class="token operator">=</span> <span class="token operator">&amp;</span>a<span class="token punctuation">;</span>   <span class="token comment">// 把`变量a`的地址给`指针变量p`</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>注意：这里<code>int</code>是指针的<strong>基类型</strong>。</p>
 <h5 id="Q3：基类型是干什么的？"><a href="#Q3：基类型是干什么的？" class="headerlink" title="Q3：基类型是干什么的？"></a>Q3：基类型是干什么的？</h5><p>基类型包含基本数据类型、结构体等，它的作用是声明该指针在读写数据时的地址区域。我们知道，程序通过指针的地址从内存中读取数据，但是读多少呢？这就需要对指针指定一个基类型，用来告诉程序”<strong>读取多少数据</strong>“。下面举例指针在字符串中的应用，这里我把基类型称之为<strong>步长</strong>。</p>
-<pre class="line-numbers language-C" data-language="C"><code class="language-C">char s[] = "Jenny is walking her dog.";
-char *p = s;
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">char</span> s<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Jenny is walking her dog."</span><span class="token punctuation">;</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>p <span class="token operator">=</span> s<span class="token punctuation">;</span>
 
-printf("s: %s\n", p);   // %s从字符串的起始地址开始读，直到遇到'\0'
-for(int i = 0; i &lt; strlen(s); i++){
-	printf("%c", *p);   // *p从内存中获取字符，%c直接读*p
-	p++;                // p每次走的步长即为基类型(char)的内存大小
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"s: %s\n"</span><span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// %s从字符串的起始地址开始读，直到遇到'\0'</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">strlen</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">,</span> <span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// *p从内存中获取字符，%c直接读*p</span>
+	p<span class="token operator">++</span><span class="token punctuation">;</span>                <span class="token comment">// p每次走的步长即为基类型(char)的内存大小</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>通过上面的例子，相信读者对基类型能有基本的理解。</p>
 <p>阐明了指针如何读/写其他数据的方式，那指针本身又是如何存储的呢？</p>
 <h5 id="Q4：指针本身分配内存吗？大小是多少？"><a href="#Q4：指针本身分配内存吗？大小是多少？" class="headerlink" title="Q4：指针本身分配内存吗？大小是多少？"></a>Q4：指针本身分配内存吗？大小是多少？</h5><p>值得一提的是，指针本身的数据类型为<span style="background-color:#00FA9A">unsigned int</span>，通过格式化中的转义字符可以验证。</p>
-<pre class="line-numbers language-C" data-language="C"><code class="language-C">char *p = str;
-printf("%d", p);	// 十进制—&gt; 1651581740
-printf("%p", p);    // 16进制—&gt; 0x7ffd6271232c<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">char</span> <span class="token operator">*</span>p <span class="token operator">=</span> str<span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment">// 十进制—&gt; 1651581740</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%p"</span><span class="token punctuation">,</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 16进制—&gt; 0x7ffd6271232c</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>指针在程序段中表示内存地址，无论我们定义的基类型是char还是struct，指针本身所占的内存空间(具体大小参考下表)都是不变的，但这**<font color="#F1096F">不代表</font>**它是基本数据类型。</p>
+<p>指针在程序段中表示内存地址，无论我们定义的基类型是char还是struct，指针本身所占的内存空间(具体大小参考下表)都是不变的，但这<font color="#F1096F">不代表</font>它是基本数据类型。</p>
 <p>指针所占内存空间取决于<strong>CPU的寻址位数</strong>。</p>
 <table>
 <thead>
@@ -1082,7 +1082,7 @@ p = NULL;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
+            collapseDepth: Number('4'),
             headingSelector: 'h2, h3, h4'
         });
 
