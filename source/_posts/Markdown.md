@@ -6,9 +6,7 @@ categories: grammar
 summary: 作为一款适用于代码与issue简述的编辑插件，Markdown一直深受程序员的喜欢。
 ---
 
- 
 
-# Markdown
 
 ## 基本语法
 
