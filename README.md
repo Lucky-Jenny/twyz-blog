@@ -28,7 +28,7 @@ ssh-keygen -t rsa -C "<上面的邮箱>"
 
 3. 到C:/Users/\<admin\>/.ssh/中把`id_rsa.pub`复制到GitHub设置中；
 4. 测试网络连通性：
-5. 
+
 ```bash
 ssh -T git@github.com
 ```
@@ -45,7 +45,7 @@ node -v
 npm -v
 ```
 
-2. 安装hexo，输入：
+3. 安装hexo，输入：
 
 ```bash
 npm install -g hexo-cli
