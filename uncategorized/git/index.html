@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Markdown语法介绍, 大胖笑">
+    <meta name="keywords" content="大胖笑">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Markdown语法介绍 | 大胖笑</title>
+    <title>大胖笑</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,12 +268,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Markdown语法介绍</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -387,25 +387,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/grammar/" class="post-category">
-                                grammar
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -414,21 +401,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-02
+                    2021-05-31
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-15
+                    2021-06-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    615
+                    2.7k
                 </div>
                 
 
@@ -453,154 +440,213 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><h4 id="1-粗体-斜体"><a href="#1-粗体-斜体" class="headerlink" title="1.粗体/斜体"></a>1.粗体/斜体<br></h4><p>使用语法：</p>
-<blockquote>
-<p>**粗体**   *斜体*   ***粗体+斜体***</p>
-</blockquote>
-<p> <strong>粗体</strong>   <em>斜体</em>   <em><strong>粗体+斜体</strong></em></p>
-<h4 id="2-删除线"><a href="#2-删除线" class="headerlink" title="2.删除线"></a>2.删除线<br></h4><p>使用语法：</p>
-<blockquote>
-<p>~~这句话不要了~~</p>
-</blockquote>
-<p><del>这句话不要了</del></p>
-<h4 id="3-高亮"><a href="#3-高亮" class="headerlink" title="3.高亮"></a>3.高亮</h4><p>当我们需要在一段话中高亮某些关键词，可以用&lt;html&gt;中的&lt;span&gt;标签来强调。</p>
-<blockquote>
-<p>VPN对数据包的处理是 &lt;span style=”background-color:#ffd351”&gt;通过封装包头(header)&lt;/span&gt;，继而在GFW外的主机上进行剥离，反之亦然。 </p>
-</blockquote>
-<p>VPN对数据包的处理是 <span style="background-color:#ffd351">通过封装包头(header)</span> ，继而在GFW外的主机上进行剥离，反之亦然。</p>
-<hr>
-<h3 id="引用内容"><a href="#引用内容" class="headerlink" title="引用内容"></a>引用内容</h3><blockquote>
-<p>当我们需要引用内容时，可以再前面加 ‘&gt;’<br><br>如果需要换行，可以在末尾+两个空格/‘&lt;br&gt;‘</p>
-<blockquote>
-<p>这是嵌套引用<br></p>
-<blockquote>
-<p>如果吃饱了没事干，可以一直套娃<br></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>尽量不要嵌套引用，不美观。</p>
-<hr>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
-<li>可以用 ‘*’ ‘+’ ‘-‘ 作为标记</li>
-</ul>
-<ul>
-<li>我还是习惯用’-‘吧，’*‘ 容易与<strong>粗体</strong>搞混</li>
-</ul>
-<h4 id="1-有序列表"><a href="#1-有序列表" class="headerlink" title="1.有序列表"></a>1.有序列表</h4><ol>
-<li>开头必须是数字，后面必须跟’.’</li>
-<li>注意：’.’后面一定要有<strong>空格</strong></li>
-<li>如果下面也有序号列表，当中要空一行，否则序号承接</li>
-</ol>
-<h4 id="2-嵌套列表"><a href="#2-嵌套列表" class="headerlink" title="2.嵌套列表"></a>2.嵌套列表</h4><ol>
-<li><p>first floor</p>
-</li>
-<li><p>second floor</p>
-<ol>
-<li>2-1</li>
-<li>2-2</li>
-</ol>
-</li>
-<li><p>third floor</p>
-<ul>
-<li>有序无序可随意嵌套；</li>
-<li>标记后面一定要有空格；</li>
-<li>当然，利用转义字符’.‘，它就不再是个列表了；</li>
-</ul>
-</li>
-<li><p>fourth floor<br>…..</p>
-</li>
-</ol>
-<hr>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线必须是3个以上的字符 *, -, _表示, 字符间可以有空格，但不能有其他字符</p>
-<blockquote>
-<p>***   - - -   _ __</p>
-</blockquote>
-<p>显示：(分割线)</p>
-<hr>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>使用语法：<br>“|” 分隔单元格，”-“ 分隔表头和行</p>
-<blockquote>
-<p>| name | age |<br>| :—-:    | :— |<br>| Twyz  | 24 |<br>| Jenny | 25 |</p>
-</blockquote>
-<table>
+                <h2 id="git介绍"><a href="#git介绍" class="headerlink" title="git介绍"></a>git介绍</h2><h3 id="历史和发展"><a href="#历史和发展" class="headerlink" title="历史和发展"></a>历史和发展</h3><p>Git诞生于一个充满争议和创举的时代。</p>
+<h4 id="1991-2002"><a href="#1991-2002" class="headerlink" title="1991-2002"></a>1991-2002</h4><p>Linux内核开源项目有着众多的开发者，而大多数的内核维护工作在提交补丁、保存归档的事务上花费了太多时间。为什么呢？因为在2002年之前，世界各地的开发者把自己的改动通过diff生成补丁，再发给Linus(Linux之父)，Linux本人通过<strong>手动</strong>方式合并代码！</p>
+<h4 id="2002-2005"><a href="#2002-2005" class="headerlink" title="2002-2005"></a>2002-2005</h4><p>但是随着代码量的增加，开发者们认为这样的管理方式效率太低，Linus于是选择了(商业的)BitKeeper作为Linux的版本控制系统，BitKeeper的母公司出于人道主义，单独授权了Linux社区免费使用该版本控制系统。然而好景不长，在2005年，社区中有人试图破解BitKeeper协议的举动被该公司发现，随即收回了Linux社区的免费试用权，Linux社区再度陷入窘境…..</p>
+<h4 id="2005-Now"><a href="#2005-Now" class="headerlink" title="2005-Now"></a>2005-Now</h4><p>Linus他和自己的团队花了<span style="background-color:#F9FC17">两周</span>的时间，用C写了一个<strong>分布式</strong>版本控制系统Git，一个月后，Git已经部署在了Linux社区中了。这一系列的操作不得不让人对Linus这个天才的感叹。直至今日，Git仍然是当今最好的代码版本控制系统。</p>
+<h3 id="git与svn"><a href="#git与svn" class="headerlink" title="git与svn"></a>git与svn</h3><table>
 <thead>
 <tr>
-<th align="center">name</th>
-<th align="left">age</th>
+<th align="left">比较项</th>
+<th align="left">SVN</th>
+<th align="left">Git</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">Twyz</td>
-<td align="left">24</td>
+<td align="left">系统</td>
+<td align="left">集中式(便于文档管理)<br>克隆1w commit的项目，需要1h</td>
+<td align="left">分布式(便于代码管理)<br>克隆1w commit的项目，需要1min</td>
 </tr>
 <tr>
-<td align="center">Jenny</td>
-<td align="left">25</td>
+<td align="left">灵活性</td>
+<td align="left">所有的操作都必须与中央服务器交互<br>一旦出故障则无法工作</td>
+<td align="left">支持离线工作，即使服务器故障也没事<br>可在本地进行各种操作，效率高</td>
+</tr>
+<tr>
+<td align="left">安全性</td>
+<td align="left">较差，需要定期备份</td>
+<td align="left">较高，人均一个库，充当备份作用</td>
+</tr>
+<tr>
+<td align="left">分支</td>
+<td align="left">切换一个分支=copy整个项目<br>创建分支，会影响全组人员，大家都会有该分支</td>
+<td align="left">可以在任意节点创建分支，本地分支不会影响其他人，支持<strong>cherry-pick</strong></td>
+</tr>
+<tr>
+<td align="left">版本控制</td>
+<td align="left">保存版本之间的差异，通过<strong>版本号</strong>进行控制<br>每次操作都会产生(全局的)高版本号</td>
+<td align="left">只关心项目整体的数据变化<br>通过<strong>hash值</strong>进行控制</td>
+</tr>
+<tr>
+<td align="left">权限</td>
+<td align="left">权限管理很严格，可按照组、目录进行权限控制<br>每个目录下都有一个.svn文件</td>
+<td align="left">没有严格的权限控制，只有角色划分<br>在主目录下有.git目录</td>
 </tr>
 </tbody></table>
-<p>表头下方的分割线标记，代表了对齐方式：</p>
+<p><img src="/pics/git/git_vs_svn.png" alt="svn-git"></p>
+<h2 id="git操作"><a href="#git操作" class="headerlink" title="git操作"></a>git操作</h2><h3 id="流程概览"><a href="#流程概览" class="headerlink" title="流程概览"></a>流程概览</h3><p>git的基本流程有4个：stage，commit，push，pull。</p>
+<p><img src="/pics/git/git-flow.png" alt="git-flow"></p>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>这里的Workding Directory就是我们当前的工作目录，当我们克隆一个项目/初始化一个仓库后，我们的状态为<strong>最新</strong>。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/Lucky-Jenny/Code_Study.git
+<span class="token function">git</span> status<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="/pics/git/status-uptodate.png" alt="init-status"></p>
+<h4 id="改动"><a href="#改动" class="headerlink" title="改动"></a>改动</h4><p>在上述状态下，我们做的所有改动都将会被监视，分为<code>untracked</code>和<code>unstaged</code>两个状态。</p>
+<p><img src="/pics/git/status-unstaged.png" alt="unstaged-status"></p>
 <ul>
-<li><strong>:—</strong> 左对齐</li>
-<li><strong>:—:</strong> 居中对齐</li>
-<li><strong>—:</strong> 右对齐</li>
+<li>untracked: 不属于本仓库内的文件(新添加的)；</li>
+<li>unstaged: 修改了属于本仓库内的文件；</li>
 </ul>
-<blockquote>
-<p>| left | center | right |<br>|:—- | :—-: | —-: |<br>| aaaa | bbbbbb | ccccc |<br>| a  |  b  |  c  |</p>
+<h4 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h4><blockquote>
+<p>暂存区的作用：区分当前仓库中哪些文件/目录需要提交。</p>
 </blockquote>
+<p>当我们的改动需要<strong>暂时</strong>保存起来，可以用add/rm进行暂存。不暂存的哪些文件则不会被提交(状态保持)。</p>
+<p><img src="/pics/git/status-stage-part.png" alt="unstaged-status"></p>
+<p>此时，切换到其他分支，我们查看状态，可以发现所有的分支都能显示了改动。</p>
+<p><img src="/pics/git/status-stage-part-2.png" alt="unstaged-status-2"></p>
+<blockquote>
+<p>暂存区的改动对<strong>所有分支</strong>都是有效的。</p>
+</blockquote>
+<h4 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h4><blockquote>
+<p>本地仓库的作用：本地项目的正式改动保存，待确认无误推送到远程仓库。</p>
+</blockquote>
+<p>我们把暂存区的改动进行提交</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"Add Atoi.c xxx"</span>
+<span class="token function">git</span> status<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="/pics/git/commit-1.png" alt="commit-status"></p>
+<p>提交之后，本地仓库比远程仓库多了一次改动。这时我们切换到别的目录，却<strong>没有该提交</strong>。</p>
+<blockquote>
+<p>本地仓库的提交<strong>只对当前提交的分支有效</strong>，对其他分支无效。</p>
+</blockquote>
+<p>其实这一点是可以推理的，试想：若每次提交都每个分支上，那么每个分支的所有改动都是一样的，那分支的意义在哪里呢？</p>
+<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>分支(branch)是版本管理中非常有效的机制，例如一个项目中，我负责模块A，他负责模块B，我们可以在各自的分支中编辑代码，这样不同模块的代码在分支合并时就不会发生冲突。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch -a          <span class="token comment"># 查看本地 &amp; 远程的所有分支</span>
+<span class="token function">git</span> checkout master    <span class="token comment"># 切换到分支&lt;master&gt;</span>
+<span class="token function">git</span> merge script       <span class="token comment"># 在&lt;master&gt;中把&lt;script&gt;合并进来</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>我们通过<code>tig</code>(git的可视化工具)查看merge之后的master仓库：</p>
+<p><img src="/pics/git/merge.png" alt="tig-merge"></p>
+<h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>标签(tag)是对项目某个阶段进度的一种标记方式，我们可以通过标签去找到当时的项目仓库改动。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> tag study-v1.1      <span class="token comment"># 添加标签</span>
+<span class="token function">git</span> tag -l              <span class="token comment"># 查看所有的标签 </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="/pics/git/tig-tag.png" alt="tig-tag"></p>
+<p>注意：<span style="background-color:#F9FC17">标签不会随着git push添加到远程仓库中</span>。如果我们想把标签推送至服务器，记住如下指令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin --tags      <span class="token comment"># 仅推送标签，不推送其他任何改动</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h3 id="远程仓库和本地仓库"><a href="#远程仓库和本地仓库" class="headerlink" title="远程仓库和本地仓库"></a>远程仓库和本地仓库</h3><p>远程仓库其实就是远程架设了一个服务器，供开发成员进行推送和拉取操作。</p>
+<h4 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h4><p>推送：<code>git push</code>。形象地理解为把所提交的改动发送到远程的服务器上，只有推送到远程仓库之后，其他的组员方可从该仓库获取改动。注意：我们既可以推送新的改动，又可以推送过去<strong>重新编辑</strong>的改动，但是极其不建议后者的操作。为什么呢？我们来看下面这个例子：</p>
+<p>ABC三位开发人员共同在package/wifi/目录下进行为期一周的开发任务。在第6天的时候，A发现B在第1天的提交X有问题，于是他修改了X：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> rebase -i <span class="token operator">&lt;</span>Commit-X<span class="token operator">&gt;</span>
+<span class="token comment"># 将要修改的提交ID，前面的`pick`改成`edit`，保存退出。</span>
+<span class="token comment"># 自动弹出该提交的信息，修改完保存退出。</span>
+<span class="token comment"># 此时HEAD应该回到原来的位置，若没有的话则执行以下操作：</span>
+<span class="token function">git</span> rebase --continue<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>注：该方法会<span style="background-color:#F9FC17">更改从X到HEAD的所有commit的hash值</span>。</p>
+<p>与此同时B和C基于第5天的仓库进行<strong>本地</strong>的修改。A向远程仓库推送X的改动之后，B和C从远程仓库获取X的改动，此时会发生冲突(<em>本地仓库最新是第6天的改动，而远程仓库是第5天的改动</em>)，导致B和C<strong>本地的改动直接作废</strong>。这是因为从第一天到第5天已经提交了许多改动，即使B和C本地<code>reset</code>到第一天的代码，仍然无法兼容第6天的改动。</p>
+<p>因此，修改过去的提交，我们建议采用以下两种方式：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 方法一：revert</span>
+<span class="token function">git</span> revert <span class="token operator">&lt;</span>Commit-ID<span class="token operator">&gt;</span>       <span class="token comment"># 原来的改动和这次的撤销都保存在历史中</span>
+<span class="token comment"># 方法二：reset</span>
+<span class="token function">git</span> reset HEAD~2          <span class="token comment"># 向后回滚两次改动，保留当前的改动</span>
+<span class="token function">git</span> reset <span class="token operator">&lt;</span>Commit-ID<span class="token operator">&gt;</span>     <span class="token comment"># 回滚到过去某一次的改动</span>
+<span class="token function">git</span> reset --hard HEAD~4   <span class="token comment"># --hard 强制回滚，所有之前的改动全部删除</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h4><p>拉取：<code>git pull</code>。在流程图中，我们会发现拉取的方向和另外两个动作是一致的，即<code>fetch</code>和<code>checkout</code>。这里就要好好叙述他们的区别：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull                 <span class="token comment"># 从远程仓库获取全部分支的最新改动，到工作区。</span>
+<span class="token function">git</span> fetch                <span class="token comment"># 从远程仓库获取全部分支的最新改动，到暂存区。</span>
+<span class="token function">git</span> fetch origin master  <span class="token comment"># 从远程仓库获取&lt;master&gt;分支的最新改动。</span>
+<span class="token function">git</span> checkout leetcode    <span class="token comment"># 切换到&lt;leetcode&gt;分支获取最新改动，到工作区。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>综上，我们可以总结：</p>
+<blockquote>
+<p>当获取当前分支的改动时，git pull = git fetch + git checkout &lt;branch&gt;</p>
+</blockquote>
+<h2 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h2><p>在实际的工作环境中，也会遇到许多问题，针对这些问题可以有许多的解决办法，我们希望采用最佳的方法去解决。</p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><h4 id="工作区的暂时备份"><a href="#工作区的暂时备份" class="headerlink" title="工作区的暂时备份"></a>工作区的暂时备份</h4><blockquote>
+<p>A正在修改代码尚未完成，此时有紧急的问题需要优先处理，应该如何快速保存当前的任务状态？</p>
+</blockquote>
+<p>最简单的方法当然是：COPY。但反复的复制粘贴，其实效率并不高，我们期望有一个指令能够迅速备份，迅速还原：stash。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> stash           <span class="token comment"># 将当前工作区中的改动保存起来，还原现场。</span>
+<span class="token function">git</span> stash pop       <span class="token comment"># 把先前保存的工作区修改，恢复出来。</span>
+<span class="token function">git</span> stash <span class="token function">clear</span>     <span class="token comment"># 丢弃之前保存的工作区的修改。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>注：<span style="background-color:#F9FC17">stash不保存untracked文件</span>，只保存unstaged文件。</p>
+<h4 id="查看具体的提交信息"><a href="#查看具体的提交信息" class="headerlink" title="查看具体的提交信息"></a>查看具体的提交信息</h4><blockquote>
+<p>A想知道在data_select.c中的134行代码是<strong>谁在何时</strong>修改的。</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 方法一：tig</span>
+tig -<span class="token operator">&gt;</span> g<span class="token punctuation">(</span>grep<span class="token punctuation">)</span>:firmware       <span class="token comment"># 根据关键词，在tig中查找</span>
+<span class="token comment"># 方法二：blame</span>
+<span class="token function">git</span> blame -L <span class="token number">133,135</span> data_select.c<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="二分法溯源"><a href="#二分法溯源" class="headerlink" title="二分法溯源"></a>二分法溯源</h4><blockquote>
+<p>现有一个bug无法定位其根源，已知该bug是发生在tag &lt;V1.2&gt;和tag &lt;V1.6&gt;之间，而这两个标签之间有100+个提交，线性排查一定是最低效的，有没有高效率的方法？</p>
+</blockquote>
+<p>git中有一个非常实用的检索工具：<span style="background-color:#00FA9A">git-bisect</span>，它采用的方式为<strong>二分法</strong>。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 将HEAD移至&lt;V1.2&gt;和&lt;V1.4&gt;中间的提交</span>
+git-bisect start <span class="token operator">&lt;</span>V1.<span class="token operator"><span class="token file-descriptor important">4</span>&gt;</span> <span class="token operator">&lt;</span>V1.<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>    <span class="token comment"># 注意顺序不要反</span>
+<span class="token comment"># 将HEAD回到原先(最新)的位置</span>
+git-bisect reset<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当遇到分支时，比如有4个分支，则定位每个分支中的<strong>最新节点</strong>，分别测试：</p>
+<ul>
+<li>若都存在该问题，则说明与这些分支无关，回到<strong>主分支</strong>中；</li>
+<li>若<strong>1</strong>个分支存在，则追溯该分支；若<strong>2</strong>个分支存在，则追溯他俩上次分叉的位置；</li>
+</ul>
+<p><img src="/pics/git/git-bisect.png" alt="git-bisect"></p>
+<h3 id="tig"><a href="#tig" class="headerlink" title="tig"></a>tig</h3><p>tig作为git的可视化工具，对于开发人员来说是非常有用的工具。这里着重介绍一下tig相关的命令和快捷键：</p>
+<h4 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tig              <span class="token comment"># 查看当前项目的改动历史</span>
+tig <span class="token builtin class-name">.</span>            <span class="token comment"># 查看当前目录的改动历史</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>注意：只有当前目录为git仓库，tig才会有效。</p>
+<h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>进入到tig后，我们可以通过下面的快捷键来进行操作：</p>
 <table>
 <thead>
 <tr>
-<th align="left">left</th>
-<th align="center">center</th>
-<th align="right">right</th>
+<th align="left">键</th>
+<th align="left">等价于</th>
+<th align="left">含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">aaaa</td>
-<td align="center">bbbbbb</td>
-<td align="right">ccccc</td>
+<td align="left">l</td>
+<td align="left">git log</td>
+<td align="left">详细的改动历史</td>
 </tr>
 <tr>
-<td align="left">a</td>
-<td align="center">b</td>
-<td align="right">c</td>
+<td align="left">r</td>
+<td align="left">git branch</td>
+<td align="left">所有的分支</td>
+</tr>
+<tr>
+<td align="left">s</td>
+<td align="left">git status</td>
+<td align="left">当前暂存和临时的修改</td>
+</tr>
+<tr>
+<td align="left">c</td>
+<td align="left">git stash pop</td>
+<td align="left">查看临时保存的内容</td>
+</tr>
+<tr>
+<td align="left">t</td>
+<td align="left">tree</td>
+<td align="left">以树形结构查看仓库，&lt;Enter&gt;进入 &lt;,&gt;退出</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="left">git branch</td>
+<td align="left">当前提交中搜索关键词</td>
+</tr>
+<tr>
+<td align="left">g</td>
+<td align="left">grep</td>
+<td align="left">所有提交中搜索关键词</td>
 </tr>
 </tbody></table>
-<hr>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>使用语法：</p>
-<blockquote>
-<p>[markdown基本语法](<a target="_blank" rel="noopener" href="https://xianbai.me/learn-md/index.html)/">https://xianbai.me/learn-md/index.html)\</a><br></p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://xianbai.me/learn-md/index.html">markdown基本语法</a><br><br>或者直接用原地址：<a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com/</a><br><br>这适合较短的网址</p>
-<hr>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>使用语法：</p>
-<blockquote>
-<p>![panda](<a target="_blank" rel="noopener" href="https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100">https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100</a> “GitHub,Social Coding”)</p>
-</blockquote>
-<p><img src="https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100" alt="GitHub" title="GitHub,Social Coding"></p>
-<p>也可设置图片大小</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html">
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>GitHub<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>GitHub,Social Coding<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<img src="https://avatars2.githubusercontent.com/u/3265208?v=3&amp;s=100" alt="GitHub" title="GitHub,Social Coding" width="70" height="70">
-
-<hr>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>使用语法：</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	<span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<hr>
-<h3 id="表情符号"><a href="#表情符号" class="headerlink" title="表情符号"></a>表情符号</h3><p>使用语法：</p>
-<blockquote>
-<p>:&lt;表情代码&gt;:</p>
-</blockquote>
-<p>举例：</p>
-<blockquote>
-<p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>      smile<br><span class="github-emoji"><span>😆</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f606.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>      laughing<br>:+1:      +1<br><span class="github-emoji"><span>👏</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f44f.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>      clap</p>
-</blockquote>
-<p>更多的表情，请参考：<a target="_blank" rel="noopener" href="https://www.webfx.com/tools/emoji-cheat-sheet/">webpage-tool</a><br></p>
-<hr>
 
                 
             </div>
@@ -627,7 +673,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.twyz.top/grammar/Markdown/">https://blog.twyz.top/grammar/Markdown/</a>
+                    <a href="https://blog.twyz.top/uncategorized/git/">https://blog.twyz.top/uncategorized/git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -664,11 +710,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -836,49 +878,39 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/language/pointer/">
+                <a href="/uncategorized/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="不安分的指针">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">不安分的指针</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            指针是C/C++中的核心，不懂它，不可能学好C，读懂它，你就进入了新的世界。
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/language/" class="post-category">
-                                    language
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Twyz.Liu
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C/">
-                        <span class="chip bg-color">C</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -886,48 +918,35 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/grammar/Markdown/">
+                <a href="/uncategorized/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Markdown语法介绍">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">Markdown语法介绍</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            作为一款适用于代码与issue简述的编辑插件，Markdown一直深受程序员的喜欢。
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/grammar/" class="post-category">
-                                    grammar
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Twyz.Liu
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
                 </div>
                 
             </div>
