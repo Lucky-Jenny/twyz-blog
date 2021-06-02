@@ -82,12 +82,12 @@ git status
 
 当我们的改动需要**暂时**保存起来，可以用add/rm进行暂存。不暂存的哪些文件则不会被提交(状态保持)。
 
-![unstaged-status](/pics/git/status-stage-part.png)
+![staged-in-master](/pics/git/staged-master.png)
 
 
 此时，切换到其他分支，我们查看状态，可以发现所有的分支都能显示了改动。
 
-![unstaged-status-2](/pics/git/status-stage-part-2.png)
+![staged-in-leetcode](/pics/git/staged-leetcode.png)
 
 > 暂存区的改动对**所有分支**都是有效的。
 
